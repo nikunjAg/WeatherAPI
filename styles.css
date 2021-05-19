@@ -1,0 +1,228 @@
+:root {
+	--header-background-color: #000;
+	--header-text-color: #fff;
+	--header-icon-color: #bdbdbd;
+	--header-logo-color: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	/* height: 100vh; */
+	background-image: linear-gradient(
+		to right bottom,
+		#8b40a4,
+		#774aa6,
+		#6356a6,
+		#535ea8
+	);
+}
+
+button,
+input {
+	font-family: inherit;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.col {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.SearchError {
+	color: #efc47a;
+	position: absolute;
+	top: 4%;
+	width: 50%;
+	left: 25%;
+	font-weight: 700;
+	font-size: 0.8rem;
+	text-align: center;
+	border: 1px solid #e38e3a;
+	border-radius: 20px;
+	padding: 5px 0px;
+	z-index: 10;
+	box-shadow: 0px 0px 3px 1px #e38e3a;
+}
+
+.SearchPage,
+.SearchResult {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+.Hide {
+	display: none;
+}
+
+.Logo {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	text-align: center;
+}
+
+.Logo h3 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 100%;
+}
+
+.Logo p {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #d8d8d8;
+}
+
+.SearchBar {
+	position: absolute;
+	top: 50%;
+	width: 70%;
+	left: 15%;
+	transform: translateY(-50%);
+	height: 4rem;
+	border-radius: 2rem;
+	background-color: transparent;
+	justify-content: flex-start;
+	border: 2px solid white;
+}
+
+.SearchForm {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 1.5rem;
+}
+
+.SearchIcon {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.SearchIcon > span {
+	font-size: 2rem;
+	color: #fff;
+}
+
+#CityName {
+	width: 100%;
+	padding: 5px 10px;
+	outline: none;
+	border: none;
+	offset: none;
+	background-color: transparent;
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+#CityName::-webkit-input-placeholder {
+	color: var(--header-icon-color);
+}
+
+.SearchResult {
+	padding: 1rem;
+}
+
+.BackButton {
+	color: #fff;
+	cursor: pointer;
+	font-size: 0.8rem;
+	float: right;
+}
+
+.BackButton > span {
+	font-size: 1.3rem;
+}
+
+.WeatherCondition {
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	flex: 1;
+}
+
+.LeftDiv .dateTime {
+	color: #ffdd00;
+	font-weight: 300;
+}
+
+.LeftDiv .location {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.currentTemperature {
+	justify-content: flex-start;
+}
+
+.currentTemperature > h3 {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.feelsLike > p {
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.geoLocation {
+	width: 80%;
+	margin-top: 1rem;
+	font-weight: 300;
+}
+
+.geoLocation > p {
+	display: flex;
+	align-items: center;
+}
+
+.geoLocation > p > span {
+	margin-left: auto;
+	font-weight: 400;
+}
+
+.RightDiv {
+	padding-left: 2rem;
+	border-left: 1px solid #ffdd00;
+	font-weight: 300;
+	font-size: 1.1rem;
+	width: 50%;
+}
+
+.RightDiv > p {
+	width: 100%;
+	justify-content: flex-start;
+}
+
+.RightDiv > p > span:first-child {
+	margin: 0 10px;
+}
+
+.RightDiv > p > span:last-child {
+	font-weight: 400;
+	margin-left: auto;
+}

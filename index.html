@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='./styles.css' />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>OpenWeatherAPI Implementation</title>
+  </head>
+
+  <body>
+    <div class='SearchError Hide'>
+      <p>Something wrong happened</p>
+      <p>Check city name or your internet connection</p>
+    </div>
+    <div class='SearchPage'>
+      <div class='Logo'>
+        <h3>Weather API</h3>
+        <p>Enter the city name to see the current weather forecast</p>
+      </div>
+      <div class='SearchBar'>
+        <form class='SearchForm' autocomplete="off">
+          <div class='SearchIcon'>
+            <span class="material-icons-sharp">
+              search
+            </span>
+          </div>
+          <input type="text" placeholder="Enter City name..." name="cityName" class="CityName" id="CityName"
+            value="New Delhi" />
+        </form>
+      </div>
+    </div>
+
+    <template id="weatherResult">
+      <div class='SearchResult col'>
+        <div style="margin-left: auto;" class='row'>
+          <div class='BackButton row'>
+            <span class="material-icons-sharp">
+              chevron_left
+            </span>
+            <p>Search another city</p>
+          </div>
+        </div>
+        <div class="WeatherCondition">
+          <div class='LeftDiv'>
+            <div class="dateTime">12:08pm, May 19</div>
+            <div class="location">New Delhi, IN</div>
+            <div class='currentTemperature row'>
+              <img src="http://openweathermap.org/img/wn/04d@2x.png" />
+              <h3>22°C</h3>
+            </div>
+            <div class='feelsLike'>
+              <p>Feels like <span>23°C</span></p>
+            </div>
+            <div class='geoLocation'>
+              <b>Location</b>
+              <p>Latitude <span>28.6128</span></p>
+              <p>Longitude <span>77.2311</span></p>
+            </div>
+          </div>
+          <div style="flex: 1;" class="row">
+            <div class="RightDiv">
+              <p class='row'>
+                <span class="material-icons-sharp">
+                  visibility
+                </span>
+                <span class='span-text'> Visibility</span>
+                <span></span>
+              </p>
+              <p class='row'><span class="material-icons-sharp">
+                  thermostat
+                </span><span class='span-text'> High</span> <span></span></p>
+              <p class='row'><span class="material-icons-sharp">
+                  thermostat
+                </span><span class='span-text'> Low</span> <span></span></p>
+              <p class='row'><span class="material-icons-sharp">
+                  water_drop
+                </span><span class='span-text'> Humidity</span> <span></span></p>
+              <p class='row'><span class="material-icons-sharp">
+                  compress
+                </span><span class='span-text'> Pressure</span> <span></span></p>
+              <p class='row'><span class="material-icons-sharp">
+                  air
+                </span><span class='span-text'> Wind</span> <span></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+  </body>
+  <script src='./script.js'></script>
+
+</html>

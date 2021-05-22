@@ -1,0 +1,22 @@
+{
+	"name": "weather-api",
+	"version": "1.0.0",
+	"description": "Website which uses OpenWeatherAPI to show the weather details based on the city name.",
+	"main": "index.js",
+	"scripts": {
+		"deploy": "gh-pages -d dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nikunjAg/WeatherAPI.git"
+	},
+	"author": "Nikunj Aggarwal",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/nikunjAg/WeatherAPI/issues"
+	},
+	"homepage": "https://nikunjAg.github.io/WeatherAPI",
+	"devDependencies": {
+		"gh-pages": "^3.1.0"
+	}
+}
